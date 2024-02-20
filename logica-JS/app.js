@@ -1,7 +1,9 @@
-alert('Boas vindas ao jogo do número secreto');
-let numeroSecreto = 5;
-let chute = prompt('Escolha um número entre 1 e 10');
+let errorMessage = 'Boas vindas ao jogo do número secreto';
+alert(errorMessage);
 
-if (chute == numeroSecreto) {
+let secretNumber = 5;
+let kick = prompt('Escolha um número entre 1 e 10');
+
+if (kick == secretNumber) {
     console.log('Isso ai! Você descobriu o número secreto (5)');
 }
