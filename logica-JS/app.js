@@ -13,7 +13,7 @@ console.log('Resultado da comparação:', kick == secretNumber);
 
 if (kick == secretNumber) 
 {
-    alert('Isso aí! Você descobriu o número secreto: ' + secretNumber);
+    alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '!');
     // pode fazer da seguinte forma de cima ou de baixo, da sua preferência
     // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}`);
 }
