@@ -42,4 +42,10 @@ else
 
 // Crie uma mensagem que informa o usuário sobre o saldo da conta, usando uma template string para incluir o valor do saldo.
 
-let accountBalance = 
+let accountBalance = 'R$ 300,00'
+alert(`Saldo da sua conta: ${accountBalance}`);
+
+// Peça ao usuário para inserir seu nome usando prompt. Em seguida, mostre um alerta de boas-vindas usando esse nome.
+
+let name = prompt('Coloque seu nome aqui');
+alert('Boas vindas, ' + name);
