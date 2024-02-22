@@ -2,26 +2,32 @@ let errorMessage = 'Boas vindas ao jogo do número secreto';
 alert(errorMessage);
 
 let secretNumber = 5;
-console.log(secretNumber);
 
-// Adicione um console.log para verificar o valor de "chute" (kick) após a entrada do usuário
-let kick = prompt('Escolha um número entre 1 e 10');
-console.log('Valor do chute:' + kick);
 
-// Adicione um console.log para verificar a comparação entre "chute"(kick) e "numeroSecreto"(secretNumber)
-console.log('Resultado da comparação:', kick == secretNumber);
+let kick;
 
-if (kick == secretNumber) 
+// enquanto chute(kick) não for igual ao número secreto(secretNumber)
+while (kick != secretNumber)
 {
-    alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '!');
+    kick = prompt('Escolha um número entre 1 e 10');
+    // se chute(kick) for igual ao número secreto(secretNumber)
+    if (kick == secretNumber) 
+    {
+        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '!');
     // pode fazer da seguinte forma de cima ou de baixo, da sua preferência
     // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}`);
-}
-else
-{
-    // Adicione um console.log para verificar o valor de "numeroSecreto"(secretNumber) quando o jogador erra
-    console.log('Valor do número secreto:', secretNumber);
-    alert('Errou! Tente novamente! O número secreto era ' + secretNumber + '!');
+    }
+    else
+    {
+        if (kick > secretNumber)
+        {
+        alert (`O número secreto é menor que ${kick}`);
+        }
+        else
+        {
+        alert(`O número secreto é maior que ${kick}`);
+        }
+    }
 }
 
 
