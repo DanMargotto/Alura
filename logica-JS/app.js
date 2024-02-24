@@ -1,19 +1,20 @@
-let errorMessage = 'Boas vindas ao jogo do número secreto';
-alert(errorMessage);
+let welcomeMessage = 'Boas vindas ao jogo do número secreto';
+alert(welcomeMessage);
 
-let secretNumber = 5;
+let secretNumber = 30;
 
 
 let kick;
+let attempt = 1;  // Esse comando mostra a quantidade de tentativas
 
 // enquanto chute(kick) não for igual ao número secreto(secretNumber)
 while (kick != secretNumber)
 {
-    kick = prompt('Escolha um número entre 1 e 10');
+    kick = prompt('Escolha um número entre 1 e 100');
     // se chute(kick) for igual ao número secreto(secretNumber)
     if (kick == secretNumber) 
     {
-        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '!');
+        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '. Foram ' + attempt + ' tentativas!!');
     // pode fazer da seguinte forma de cima ou de baixo, da sua preferência
     // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}`);
     }
@@ -27,6 +28,7 @@ while (kick != secretNumber)
         {
         alert(`O número secreto é maior que ${kick}`);
         }
+        attempt += 1;
     }
 }
 
