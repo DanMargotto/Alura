@@ -14,9 +14,7 @@ while (kick != secretNumber)
     // se chute(kick) for igual ao número secreto(secretNumber)
     if (kick == secretNumber) 
     {
-        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '. Foram ' + attempt + ' tentativas!');
-    // pode fazer da seguinte forma de cima ou de baixo, da sua preferência
-    // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}. Foram ${attempt} tentativas!`);
+        break;  
     }
     else
     {
@@ -32,5 +30,16 @@ while (kick != secretNumber)
     }
 }
 
+let attemptWord = attempt > 1 ? 'tentativas' : 'tentativa';
+alert(`Isso aí! Você descobriu o número secreto: ${secretNumber} com ${attempt} ${attemptWord}!`);
+
+// if (attempt > 1)
+// {
+//     alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}. Foram ${attempt} tentativas!`);
+// }
+// else
+// {
+//     alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}. Foram ${attempt} tentativa!`);
+// }
 
 // É importante lembrar que, quando o projeto ficar disponível para todas as pessoas, o que chamamos no contexto de software de ambiente de produção, os comandos console.log devem ser removidos ou desabilitados, pois podem causar problemas de desempenho e segurança.
