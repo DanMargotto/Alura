@@ -14,9 +14,9 @@ while (kick != secretNumber)
     // se chute(kick) for igual ao número secreto(secretNumber)
     if (kick == secretNumber) 
     {
-        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '. Foram ' + attempt + ' tentativas!!');
+        alert('Isso aí! Você descobriu o número secreto: ' + secretNumber + '. Foram ' + attempt + ' tentativas!');
     // pode fazer da seguinte forma de cima ou de baixo, da sua preferência
-    // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}`);
+    // alert(`Isso aí! Você descobriu o número secreto: ${secretNumber}. Foram ${attempt} tentativas!`);
     }
     else
     {
