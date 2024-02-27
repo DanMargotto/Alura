@@ -1,7 +1,7 @@
 let welcomeMessage = 'Boas vindas ao jogo do número secreto';
 alert(welcomeMessage);
 
-let secretNumber = 30;
+let secretNumber = parseInt(Math.random() * 100 + 1);
 
 
 let kick;
