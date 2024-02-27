@@ -1,7 +1,8 @@
 let welcomeMessage = 'Boas vindas ao jogo do número secreto';
 alert(welcomeMessage);
 
-let secretNumber = parseInt(Math.random() * 100 + 1);
+let maxNumber = 5000;   //essa variável mostra o número máximo
+let secretNumber = parseInt(Math.random() * maxNumber + 1);
 
 
 let kick;
@@ -10,7 +11,7 @@ let attempt = 1;  // Esse comando mostra a quantidade de tentativas
 // enquanto chute(kick) não for igual ao número secreto(secretNumber)
 while (kick != secretNumber)
 {
-    kick = prompt('Escolha um número entre 1 e 100');
+    kick = prompt(`Escolha um número entre 1 e ${maxNumber}`);
     // se chute(kick) for igual ao número secreto(secretNumber)
     if (kick == secretNumber) 
     {
